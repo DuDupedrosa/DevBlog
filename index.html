@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBlog</title>
+  <meta name="description" content="Você que deseja ser um dev, venha conhecer o
+  DevBlog e ficar por dentro do mundo do front-end.">
+
+  <!-- metas -ogs -->
+  <meta property="og:title" content=DevBlog">
+  <meta property="og:description" content="Você que deseja ser um dev, venha conhecer o
+  DevBlog e ficar por dentro do mundo do front-end.">
+  <meta property="og:type" content="Website">
+
+  <!-- fonts-externas poppins/roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <header id="header-home" class="background-1">
+    <div class="container header-itens">
+      <div class="header-img">
+        <a href="./index.html"><img src="./img/icons/logo.svg" alt="Logo" width="162" height="37"></a>
+      </div>
+      <nav class="nav-home" aria-label="Navegação principal" data-menu>
+        <button class="btn-menu-mobile" data-menu="btn">Menu</button>
+        <ul class="nav-list" data-menu="list">
+          <li><a href="/" class="font-size-2 family-2 color-1">Home</a></li>
+          <li><a href="/" class="font-size-2 family-2 color-1">Sobre</a></li>
+          <li><a href="/" class="font-size-2 family-2 color-1">Categorias</a></li>
+          <li><a href="/" class="font-size-2 family-2 color-1">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="box-search">
+        <form id="search-form">
+          <div class="box-input">
+            <input type="search" name="q" id="search" placeholder="Buscar">
+          </div>
+          <button class="button-search"><img src="./img/icons/search.svg" alt=""></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <section class="introduction background-1" aria-label="Veja o guia para se tornar um dev em 2022">
+    <div class="container introduction-itens">
+      <div class="introduction-content">
+        <h1 class="family-1 font-size-6 color-2">Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h1>
+        <p class="family-2 font-size-2 color-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac. </p>
+        <a href="/" class="family-2 font-size-2 color-2">Veja mais<span><img src="./img/icons/arrow-right.svg" alt="" width="24" height="24"></span></a>
+      </div>
+      <div class="introduction-img">
+        <img src="./img/featured-image.png" alt="foto ilustrativa de um código" width="1148" height="700">
+      </div>
+    </div>
+  </section>
+  <article id="first-news" aria-label="Principais notícias sobre as tecnologias front-end">
+    <div class="container first-news">
+      <div class="group-1">
+        <div class="first-news-img">
+          <figure>
+            <img src="./img/post-1.jpg" alt="Post-1" width="1146" height="693">
+            <figcaption class="family-2 size-1 color-5">Janeiro 04, 2022</figcaption>
+          </figure>
+        </div>
+        <div class="first-news-content first-news-content-1">
+          <h2 class="family-2 size-4 color-4">Começando no ReactJS em 2022</h2>
+          <p class="family-2 size-1 color-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.</p>
+        </div>
+      </div>
+      <div class="group-2">
+        <div class="first-news-content first-news-content-2">
+          <span class="family-2 size-1 color-5">Janeiro 04, 2022</span>
+          <h2 class="family-1 size-4 color-4">Conheça as principais técnicas para conseguir uma vaga internacional em programação</h2>
+          <p class="family-2 size-1 color-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+        </div>
+        <div class="first-news-content first-news-content-3">
+          <span class="family-2 size-1 color-5">Janeiro 04, 2022</span>
+          <h2 class="family-2 size-4 color-4">Veja a evolução do Front-end na prática</h2>
+          <p class="family-2 size-1 color-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. </p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <section id="extra-news" aria-label="Dicas sobre o mercado e a produtividade do front-end">
+    <div class="container extra-news">
+      <ul class="extra-news-itens">
+        <li>
+          <figure class="extra-news-img">
+            <img src="./img/post-2.jpg" alt="post-2" width="748" height="528">
+            <figcaption class="family-2 font-size-1 color-5">Janeiro 04, 2022</figcaption>
+          </figure>
+          <div class="extra-news-content">
+            <h2 class="family-2 font-size-4 color-4">10 dicas para conseguir a vaga desejada</h2>
+            <p class="family-2 font-size-1 color-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+          </div>
+        </li>
+        <li>
+          <figure class="extra-news-img">
+            <img src="./img/post-3.jpg" alt="post-3" width="748" height="528">
+            <figcaption class="family-2 font-size-1 color-5">Janeiro 04, 2022</figcaption>
+          </figure>
+          <div class="extra-news-content">
+            <h2 class="family-2 font-size-4 color-4">Deixe seu código mais semântico com essas dicas</h2>
+            <p class="family-2 font-size-1 color-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+          </div>
+        </li>
+        <li class="grid-iten-3">
+          <figure class="extra-news-img">
+            <img src="./img/post-4.jpg" alt="post-4" width="748" height="528">
+            <figcaption class="family-2 font-size-1 color-5">Janeiro 04, 2022</figcaption>
+          </figure>
+          <div class="extra-news-content">
+            <h2 class="family-2 font-size-4 color-4">Use essas dicas nas suas aplicações mobile</h2>
+            <p class="family-2 font-size-1 color-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="background-1">
+    <div class="container footer-content">
+      <p class="family-1 color-1 size-2">TheBlog &copy; todos direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>

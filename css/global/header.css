@@ -1,0 +1,231 @@
+/* só é ativado quando chega em 800px */
+.btn-menu-mobile {
+  display: none;
+}
+
+.header-itens {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 4rem 1.25rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-list li a {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 0.8rem 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* para garantir que só vai gerar este
+   estilo de before quando não estivermos
+   em smartphones, para não gerar conflito
+   com o outro before criado no estilo
+   de smartphone (800px) pra baixo  */
+@media (min-width: 50.0625rem) {
+  .nav-list li a::before {
+    content: "";
+    display: inline-block;
+    width: 0.125rem;
+    height: 1.125rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+
+  .nav-list li a:hover::before {
+    background-color: var(--background-4);
+  }
+}
+
+#search-form {
+  display: flex;
+  align-items: stretch;
+}
+
+#search {
+  font-size: 0.875rem;
+  font-family: var(--family-2);
+  color: var(--color-3);
+  padding: 0.875rem 1.25rem;
+  background-color: var(--background-2);
+  border: 2px solid transparent;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+#search:focus {
+  outline: none;
+  border-color: var(--background-5);
+}
+
+.button-search {
+  background-color: var(--background-3);
+  border: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+  display: block;
+  cursor: pointer;
+}
+
+.button-search img {
+  padding: 0.625rem 1.4375rem;
+}
+
+/* Primeira quebra para ajustar
+   a posição do input no layout  */
+@media (min-width: 50.0625rem) and (max-width: 63.5rem) {
+  .header-itens {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .box-search {
+    grid-column: 2;
+    justify-self: end;
+  }
+}
+
+/* estilos para smartphone */
+@media (max-width: 50rem) {
+  .btn-menu-mobile {
+    display: initial;
+  }
+
+  .header-itens {
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+  }
+
+  #search-form {
+    justify-content: end;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .nav-home {
+    position: relative;
+  }
+
+  .nav-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    background: var(--background-3);
+    border-radius: 0 0.3125rem 0.3125rem 0.3125rem;
+    padding: 0.8rem;
+    margin-top: 0.25rem;
+  }
+
+  .nav-list li a::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--background-1);
+    margin-right: 0.25rem;
+  }
+
+  .btn-menu-mobile {
+    font-size: var(--size-3);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: var(--family-2);
+    padding: 0.625rem 0.5rem;
+    border-radius: 0.3125rem;
+    border: none;
+    background-color: var(--background-3);
+    color: var(--color-1);
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    cursor: pointer;
+  }
+
+  .btn-menu-mobile::before {
+    content: "";
+    display: inline-block;
+    width: 1.75rem;
+    height: 0.1875rem;
+    background-color: var(--background-5);
+    box-shadow: 0 0.5rem var(--background-5), 0 -0.5rem var(--background-5);
+    transition: 0.4s;
+  }
+
+  .nav-list {
+    display: none; /* quando ativo colocar flex */
+    transition: 0.3s;
+  }
+
+  @keyframes show-menu {
+    from {
+      opacity: 0;
+      transform: translate3d(-2.5rem, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .nav-list.active-menu {
+    display: flex;
+    animation: show-menu 0.4s forwards;
+  }
+
+  .btn-menu-mobile.active-menu::before {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .header-itens {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  #search {
+    font-size: 0.75rem;
+    font-family: var(--family-2);
+    color: var(--color-3);
+    padding: 0.625rem 0.5rem;
+    background-color: var(--background-2);
+    border: 2px solid transparent;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+
+  #search:focus {
+    outline: none;
+    border-color: var(--background-5);
+  }
+
+  .button-search {
+    background-color: var(--background-3);
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    display: block;
+  }
+
+  .button-search img {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+@media (max-width: 24.375rem) {
+  #search-form {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+.introduction {
+  border-bottom: 6px solid var(--background-4);
+  margin-bottom: 60px;
+}
+.introduction-itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 1.875rem;
+  padding-bottom: 4rem;
+}
+
+.introduction-content h1 {
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.introduction-content p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  max-width: 469px;
+}
+
+.introduction-content a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 0;
+  max-width: max-content;
+}
+
+@media (max-width: 50rem) {
+  .introduction-itens {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 28.75rem) {
+  .introduction-content h1 {
+    font-size: var(--size-5);
+  }
+}

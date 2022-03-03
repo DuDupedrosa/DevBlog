@@ -1,0 +1,9 @@
+.footer-content {
+  padding: 2rem 0;
+}
+
+.footer-content p {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}

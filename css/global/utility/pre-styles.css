@@ -1,0 +1,82 @@
+/* container */
+.container {
+  max-width: 75rem; /*  1200px */
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+
+/*  estilos utilitários para background  */
+.background-1 {
+  background-color: var(--background-1);
+}
+
+.background-2 {
+  background-color: var(--background-2);
+}
+
+.background-3 {
+  background-color: var(--background-3);
+}
+
+.background-4 {
+  background-color: var(--background-4);
+}
+
+/*  estilos utilitários para colors  */
+
+.color-1 {
+  color: var(--color-1);
+}
+
+.color-2 {
+  color: var(--color-2);
+}
+
+.color-3 {
+  color: var(--color-3);
+}
+
+.color-4 {
+  color: var(--color-4);
+}
+
+.color-5 {
+  color: var(--color-5);
+}
+
+/*  estilos utilitários para font-size  */
+
+.font-size-1 {
+  font-size: var(--size-1);
+}
+
+.font-size-2 {
+  font-size: var(--size-2);
+}
+
+.font-size-3 {
+  font-size: var(--size-3);
+}
+
+.font-size-4 {
+  font-size: var(--size-4);
+}
+
+.font-size-5 {
+  font-size: var(--size-5);
+}
+
+.font-size-6 {
+  font-size: var(--size-6);
+}
+
+/*  estilos utilitários para font-family  */
+
+.family-1 {
+  font-family: var(--family-1);
+}
+
+.family-2 {
+  font-family: var(--family-2);
+}

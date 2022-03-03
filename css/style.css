@@ -1,0 +1,15 @@
+/* estilos gerais */
+@import url(./global/utility/reset.css);
+@import url(./global/utility/variable.css);
+@import url(./global/utility/pre-styles.css);
+
+/* header */
+@import url(./global/header.css);
+
+/* footer */
+@import url(./global/footer.css);
+
+/* home */
+@import url(./home/introduction-home.css);
+@import url(./home/first-news.css);
+@import url(./home/extra-news.css);
